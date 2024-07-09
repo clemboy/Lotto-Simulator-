@@ -1,0 +1,29 @@
+Human-Readable Code
+
+Normal Mode
+
+-When a user click on a Normal User button, display the normal user interface with the event listener function. 
+-The interface displays a text box that displays an array of 52 numbers.
+-On the numbers displayed, click 6 numbers between 1 and 52 that  display a list of 6 numbers with the classList 
+property(classList property returns a list of numbers in a form of an array).
+-Select the radio button to use the same numbers for Lotto plus 1 and Lotto plus 2
+-Then choose numbers between 1-10 for boards to be displayed(each number selected represent the number of boards to be displayed)
+-Select the Generate Tickets to display the boards(the number of boards displayed must correspond with the number selected from the previous step)
+
+Admin Mode
+
+-When a user click on Admin button, any information about the user must be cleared except for the user's 
+ button(innerHtml property will be used to clear the user's content)
+-Admin interface is displayed with a button createElement property
+-The button simulate the draw with createElement property
+-The classList property will the be used to add the simulated draw
+-When clicked,the button will simulate the draw with the eventListener property
+
+General Functions
+
+-Create a fucntion to generate tickets based on user input
+-Dispay data in a form of an array with from,filter and map methods
+-Create a function to simulate draw
+-Use built-in console function to display a string with "Generate tickets..."
+-Again, use build-in console function to display a string with "Simulating draw..."
+
