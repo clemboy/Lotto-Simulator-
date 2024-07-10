@@ -11,14 +11,18 @@ body {
 
 /* Basic styling for the container */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0px;
+    max-width: 900px;
+    margin: 90px auto; /* Increased margin */
+    padding: 90px; /* Increased padding */
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
     background-color: #17c2e0;
+}
+
+h1 {
+    color: black;
 }
 
 /* Styling for the mode selection buttons */
@@ -27,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding: 90px;
 }
 
 .mode-btn {
@@ -46,7 +51,7 @@ body {
 /* Styling for the price section */
 .price-section {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px; /* Increased padding */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -146,4 +151,6 @@ body {
         font-size: 0.8rem;
     }
 }
+
+
 
