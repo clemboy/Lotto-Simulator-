@@ -1,155 +1,103 @@
-/* Reset default styles */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(214, 185, 20);
-}
-
-/* Basic styling for the container */
-.container {
-    max-width: 900px;
-    margin: 90px auto; /* Increased margin */
-    padding: 90px; /* Increased padding */
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #17c2e0;
-}
-
-h1 {
-    color: black;
-}
-
-/* Styling for the mode selection buttons */
-.mode-container {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 90px;
-}
-
-.mode-btn {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.mode-btn.active {
-    background-color: #0056b3;
-}
-
-/* Styling for the price section */
-.price-section {
-    margin-top: 20px;
-    padding: 15px; /* Increased padding */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.price-section h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.price-section p {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-/* Styling for number boards */
-.board {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.board h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.board-numbers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.ball {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    font-size: 1rem;
+    height: 100vh;
 }
 
-/* Ball colors based on ranges */
-.ball.red {
-    background-color: red;
+#app {
+    width: 90%; /* Adjusted width */
+    max-width: 1200px; /* Added max-width for responsiveness */
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1em;
+    margin-top: 2em; /* Added margin top */
+    display: flex; /* Added display flex for vertical centering */
+    flex-direction: column; /* Align children in a column */
+}
+
+header {
+    background: #007bff;
     color: white;
+    padding: 1em;
+    text-align: center;
 }
 
-.ball.yellow {
-    background-color: yellow;
-    color: black;
+header h1 {
+    margin: 0;
 }
 
-.ball.green {
-    background-color: green;
+header button {
+    background: white;
+    color: #007bff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+main {
+    padding: 1em;
+    flex: 1; /* Allow main content to grow */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Align children in a column */
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 800px; /* Adjusted max-width for the number grid */
+    margin: 0 auto; /* Center align the number grid */
+    margin-bottom: 20px; /* Added margin bottom for space */
+}
+
+.number {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: bold; /* Make the numbers bold */
+}
+
+.number.red { background: red; }
+.number.yellow { background: yellow; color: black; }
+.number.green { background: green; }
+.number.blue { background: blue; }
+
+.number.selected {
+    background-color: #3dacb670; /* Yellow background for selected numbers */
+    color: #333; /* Dark text color for better contrast */
+}
+
+#submit-numbers {
+    margin-top: 10px; /* Added margin top for spacing */
+    padding: 0.75em 1.5em;
+    background: #007bff;
     color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-.ball.blue {
-    background-color: blue;
+button {
+    padding: 0.75em 1.5em;
+    background: #007bff;
     color: white;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .mode-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mode-btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .price-section {
-        font-size: 0.9rem;
-    }
-
-    .board {
-        font-size: 0.9rem;
-    }
-
-    .ball {
-        width: 30px;
-        height: 30px;
-        font-size: 0.8rem;
-    }
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 
